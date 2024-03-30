@@ -22,7 +22,14 @@
         <section class="sec">
             <article>
                 <img src="./Images/bio-img.jpg" alt="Bio Image" width="350" height="350" title="Bio Pic">
-                <p id="mp"> Masaood Shah </p><audio src="./Audios/my-name.mp3" controls ></audio>
+                <p id="mp"> Masaood Shah <img id="speaker" src="./Images/speaker-icon-2.png" alt="speaker icon" title="Name Audio"></img></p>
+                <script>
+                    var audio = new Audio("./Audios/my-name.mp3");
+                    function playaudio() {
+                        audio.play();
+                    }
+                    document.getElementById("speaker").addEventListener("click", playaudio);
+                </script>
             </article>
             <article>
                 <h2>BIO:</h2>
